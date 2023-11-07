@@ -3,7 +3,6 @@ package com.example.eventup.dbHelper;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-
 import androidx.annotation.Nullable;
 
 public class DatabaseAux extends SQLiteOpenHelper {
@@ -27,4 +26,6 @@ public class DatabaseAux extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
     }
+
+
 }

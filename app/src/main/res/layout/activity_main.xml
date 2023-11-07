@@ -14,11 +14,15 @@
         android:id="@+id/btnShow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/Principal"
 
+        android:background="@color/Principal"
+        android:onClick="cahngeToMostrarUsers"
         android:text="MostrarUsuarios"
-        tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="639dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline15"
+        app:layout_constraintVertical_bias="0.45" />
 
     <Button
         android:id="@+id/btnChangeToRegistro"
@@ -28,19 +32,23 @@
         android:onClick="changeToRegistro"
         android:text="Registrarse"
         android:textColor="#FFFFFF"
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="521dp" />
+        app:layout_constraintBottom_toTopOf="@+id/guideline15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline10" />
 
     <Button
         android:id="@+id/btnChangeToLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/Principal"
-        android:onClick="changeToRegistro"
-        android:text="Registrarse"
+        android:onClick="changeToLogin"
+        android:text="Log in"
         android:textColor="#FFFFFF"
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="397dp" />
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline9" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -66,6 +74,31 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="477dp" />
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="265dp"
+        android:layout_height="32dp"
+        android:text="NO TE PIERDAS NINGUN PLAN"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/guideline9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline11" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="291dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="581dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

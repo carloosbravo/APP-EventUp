@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,13 +27,13 @@ public class Registro extends AppCompatActivity {
     }
 
     public void InsertValues(View v){
-        TextView nameTextView = findViewById(R.id.editTextUserName);
-        TextView emailTextView = findViewById(R.id.editTextEmail);
-        TextView passwordTextView = findViewById(R.id.editTextPassword);
+        EditText nameEditText = findViewById(R.id.editTextUserName);
+        EditText emailEditText = findViewById(R.id.editTextEmail);
+        EditText passwordEditText = findViewById(R.id.editTextPassword);
 
-        String nameString = nameTextView.getText().toString();
-        String emailString = emailTextView.getText().toString();
-        String passwordString = passwordTextView.getText().toString();
+        String nameString = nameEditText.getText().toString();
+        String emailString = emailEditText.getText().toString();
+        String passwordString = passwordEditText.getText().toString();
 
         DatabaseAux aux = new DatabaseAux(Registro.this);
         SQLiteDatabase db = aux.getWritableDatabase();
@@ -46,9 +47,9 @@ public class Registro extends AppCompatActivity {
             long res = db.insert("users", null, values);
             if(res >= 0) {
                 Toast.makeText(this, "Insertado correctamente", Toast.LENGTH_LONG).show();
-                nameTextView.setText("");
-                emailTextView.setText("");
-                passwordTextView.setText("");
+                nameEditText.setText("");
+                emailEditText.setText("");
+                passwordEditText.setText("");
             }
             else {
                 Toast.makeText(this, "Fallo al insertar", Toast.LENGTH_LONG).show();

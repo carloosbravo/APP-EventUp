@@ -19,4 +19,17 @@ public class MainActivity extends AppCompatActivity {
         startActivity(nIntent);
 
     }
+
+    public void changeToLogin(View view){
+        Intent nIntent = new Intent(MainActivity.this,Login.class);
+        startActivity(nIntent);
+
+    }
+
+    public void changeToMostrarUsers(View view){
+        Intent nIntent = new Intent(MainActivity.this, MostrarUsuarios.class);
+        startActivity(nIntent);
+
+    }
+
 }
