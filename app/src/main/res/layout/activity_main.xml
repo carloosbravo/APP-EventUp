@@ -4,47 +4,68 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D9D9D9"
+    android:background="@color/grisClarito"
     tools:context=".MainActivity">
+
+
+    <!-- Agrega un ImageView y establece la imagen utilizando la propiedad src -->
+
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/Principal"
+
+        android:text="MostrarUsuarios"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="639dp" />
 
     <Button
         android:id="@+id/btnChangeToRegistro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="148dp"
-        android:text="Registrarse"
         android:background="@color/Principal"
+        android:onClick="changeToRegistro"
+        android:text="Registrarse"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.606" />
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="521dp" />
 
-
-    <!-- Agrega un ImageView y establece la imagen utilizando la propiedad src -->
     <Button
-        android:id="@+id/btnShow"
+        android:id="@+id/btnChangeToLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
-        android:text="MostrarUsuarios"
         android:background="@color/Principal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.439" />
+        android:onClick="changeToRegistro"
+        android:text="Registrarse"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="397dp" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="180dp"
-        android:layout_height="197dp"
-        android:layout_marginTop="36dp"
+        android:layout_width="333dp"
+        android:layout_height="328dp"
+        android:layout_marginTop="4dp"
         android:src="@drawable/logo"
-        app:layout_constraintBottom_toTopOf="@+id/btnShow"
+        app:layout_constraintBottom_toTopOf="@+id/guideline9"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="364dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="477dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
