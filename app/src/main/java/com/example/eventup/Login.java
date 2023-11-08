@@ -53,6 +53,8 @@ public class Login extends AppCompatActivity {
             if (cursor != null) {
                 if (cursor.getCount() > 0) {
                     Toast.makeText(this, "Iniciando sesión", Toast.LENGTH_LONG).show();
+                    Intent nIntent = new Intent(Login.this,MainActivity.class);
+                    startActivity(nIntent);
                 } else {
                     Toast.makeText(this, "usuario o la contraseña estan mal introducidos.", Toast.LENGTH_LONG).show();
                 }
