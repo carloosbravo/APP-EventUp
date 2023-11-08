@@ -25,6 +25,10 @@ public class Registro extends AppCompatActivity {
         Intent nIntent = new Intent(Registro.this, MainActivity.class);
         startActivity(nIntent);
     }
+    public void changeToPerfil(View view){
+        Intent nIntent = new Intent(Registro.this, Perfil.class);
+        startActivity(nIntent);
+    }
 
     public void InsertValues(View v){
         EditText nameEditText = findViewById(R.id.editTextUserName);
@@ -46,13 +50,17 @@ public class Registro extends AppCompatActivity {
 
             long res = db.insert("users", null, values);
             if(res >= 0) {
-                Toast.makeText(this, "Insertado correctamente", Toast.LENGTH_LONG).show();
-                nameEditText.setText("");
-                emailEditText.setText("");
-                passwordEditText.setText("");
+
+                Toast.makeText(this, "Cuenta creada", Toast.LENGTH_LONG).show();
+                Intent nIntent = new Intent(Registro.this, Perfil.class);
+                startActivity(nIntent);
+
             }
             else {
                 Toast.makeText(this, "Fallo al insertar", Toast.LENGTH_LONG).show();
+                nameEditText.setText("");
+                emailEditText.setText("");
+                passwordEditText.setText("");
             }
             db.close();
         }

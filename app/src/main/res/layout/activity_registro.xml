@@ -32,13 +32,12 @@
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="@+id/guideline6" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/editTextUserName"
         android:layout_width="231dp"
         android:layout_height="55dp"
         android:backgroundTint="#000000"
         android:ems="10"
-        android:inputType="text"
         android:text="User Name"
         android:elevation="2dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline6"

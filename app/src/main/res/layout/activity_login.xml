@@ -34,9 +34,9 @@
         app:layout_constraintGuide_begin="365dp" />
 
     <EditText
-        android:id="@+id/EditTextLogNameUser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/EditTextLoginNameUser"
+        android:layout_width="240dp"
+        android:layout_height="49dp"
         android:layout_marginTop="44dp"
         android:ems="10"
         android:inputType="text"
@@ -48,27 +48,26 @@
 
     <EditText
         android:id="@+id/editTextLoginPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="243dp"
+        android:layout_height="46dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text="password"
         app:layout_constraintBottom_toTopOf="@+id/guideline13"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EditTextLogNameUser" />
+        app:layout_constraintTop_toBottomOf="@+id/EditTextLoginNameUser" />
 
     <Button
         android:id="@+id/btnloginLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Log in"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="@+id/guideline14"
-        app:layout_constraintTop_toTopOf="@+id/guideline13"
-        app:layout_constraintVertical_bias="0.11" />
+        app:layout_constraintTop_toTopOf="@+id/guideline13" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline14"
@@ -83,8 +82,17 @@
         android:layout_height="wrap_content"
         android:onClick="changeToMain"
         android:text="Volver"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="399dp" />
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline13" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="476dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

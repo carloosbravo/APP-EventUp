@@ -11,20 +11,6 @@
     <!-- Agrega un ImageView y establece la imagen utilizando la propiedad src -->
 
     <Button
-        android:id="@+id/btnShow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:background="@color/Principal"
-        android:onClick="cahngeToMostrarUsers"
-        android:text="MostrarUsuarios"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline15"
-        app:layout_constraintVertical_bias="0.45" />
-
-    <Button
         android:id="@+id/btnChangeToRegistro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -80,6 +66,8 @@
         android:layout_width="265dp"
         android:layout_height="32dp"
         android:text="NO TE PIERDAS NINGUN PLAN"
+        android:textStyle="bold"
+        android:textSize="18dp"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/guideline9"
         app:layout_constraintEnd_toEndOf="parent"
