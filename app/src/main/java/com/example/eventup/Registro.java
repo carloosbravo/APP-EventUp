@@ -65,5 +65,7 @@ public class Registro extends AppCompatActivity {
             db.close();
         }
 
+
+
     }
 }

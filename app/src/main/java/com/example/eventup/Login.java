@@ -52,9 +52,9 @@ public class Login extends AppCompatActivity {
 
             if (cursor != null) {
                 if (cursor.getCount() > 0) {
-                    Toast.makeText(this, "Usuario encontrado en la base de datos", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, "Iniciando sesión", Toast.LENGTH_LONG).show();
                 } else {
-                    Toast.makeText(this, "Usuario no encontrado en la base de datos", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, "usuario o la contraseña estan mal introducidos.", Toast.LENGTH_LONG).show();
                 }
                 cursor.close();
             }

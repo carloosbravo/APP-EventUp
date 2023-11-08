@@ -62,6 +62,7 @@
         android:id="@+id/btnloginLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="checkUser"
         android:text="Log in"
         app:layout_constraintBottom_toTopOf="@+id/guideline5"
         app:layout_constraintEnd_toEndOf="parent"
